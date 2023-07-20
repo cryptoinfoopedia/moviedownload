@@ -18,18 +18,18 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					"https://cheerfullybakery.com/b3z9kh8uf?key=b8edd9878f41e4a5c2064b1373ea8301/"
+					'https://cheerfullybakery.com/b3z9kh8uf?key=b8edd9878f41e4a5c2064b1373ea8301/'
 				}`,
 			},
 		};
 	}
 	
-	if (referringURL?.includes('pinterest.com') || pinterestParam) {
+	if (referringURL?.includes('pinterest.com') || pin) {
     return {
         redirect: {
             permanent: false,
             destination: `${
-                "https://dramaticagreementsalt.com/aj5qthbpvj?key=207916c680bf1f5bfb57045c84e37cd6/"
+                'https://dramaticagreementsalt.com/aj5qthbpvj?key=207916c680bf1f5bfb57045c84e37cd6/'
             }`,
         },
     };
