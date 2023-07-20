@@ -23,6 +23,17 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 	}
+	
+	if (referringURL?.includes('pinterest.com') || pinterestParam) {
+    return {
+        redirect: {
+            permanent: false,
+            destination: `${
+                "https://dramaticagreementsalt.com/aj5qthbpvj?key=207916c680bf1f5bfb57045c84e37cd6/"
+            }`,
+        },
+    };
+}
 	const query = gql`
 		{
 			post(id: "/${path}/", idType: URI) {
